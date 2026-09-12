@@ -1,1 +1,0 @@
-console.info("SIPERALAB berjalan melalui Vite.");
