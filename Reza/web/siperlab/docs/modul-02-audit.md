@@ -15,3 +15,6 @@
 - [x] Submit kosong memunculkan validasi browser.
 - [x] Urutan Tab logis.
 - [x] Validator tidak menampilkan error utama.
+
+## Analisis Katalog: `article` vs `table` (Challenge Advanced)
+Penggunaan elemen `<article>` lebih tepat digunakan untuk katalog peralatan SIPERALAB karena setiap item memiliki entitas mandiri yang kaya akan konten visual (seperti gambar, deskripsi, stok, dan kondisi). Struktur ini fleksibel dan mudah diadaptasi menjadi tata letak kartu (*card layout*) pada tampilan responsif. Sebaliknya, elemen `<table>` lebih cocok digunakan jika fokus utama data adalah perbandingan matriks antar variabel secara tabular (seperti perbandingan baris kolom spesifikasi teknis). Dalam kasus katalog SIPERALAB, `<article>` memberikan hierarki dokumen semantik yang lebih baik untuk pembaca layar dibanding tabel.
