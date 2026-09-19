@@ -70,9 +70,47 @@ textarea {
   --color-border: #cbd5e1;
   --color-text: #1f2937;
   --radius: 0.75rem;
-  --space: 1rem;
+
+  /* Skala Spacing Tambahan (Advanced Challenge) */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+
   font-family: system-ui, sans-serif;
   line-height: 1.5;
+}
+
+/* Penerapan Spacing */
+.site-header {
+  padding-block: var(--space-md);
+  border-bottom: 1px solid var(--color-border);
+}
+
+nav a {
+  color: var(--color-primary);
+  margin-right: var(--space-md);
+}
+
+.equipment-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-md);
+  margin-block: var(--space-md);
+}
+
+fieldset {
+  margin-block: var(--space-md);
+  padding: var(--space-lg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+label {
+  display: block;
+  margin-top: var(--space-sm);
 }
 
 body {
@@ -140,3 +178,54 @@ input:focus, select:focus, textarea:focus, button:focus, a:focus {
   outline-offset: 2px;
 }
 
+/* Style Badge Status */
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.6rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 1rem;
+  margin-left: 0.5rem;
+}
+
+.badge-success {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.badge-warning {
+  background-color: #fef3c7;
+  color: #b45309;
+}
+
+/* Styling Tombol & Link Interaktif */
+a, button, input[type="submit"] {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover & Focus state konsisten untuk Link */
+nav a:hover, a:hover {
+  color: var(--color-primary-dark);
+  text-decoration: underline;
+}
+
+/* Style Button Dasar */
+button, input[type="submit"] {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font: inherit;
+}
+
+button:hover, input[type="submit"]:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/* Focus State Global */
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 3px solid #93c5fd;
+  outline-offset: 2px;
+}
